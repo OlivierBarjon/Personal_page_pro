@@ -1,0 +1,24 @@
+/* ########## MAIN ##########  */
+
+main {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.presentation {
+    width: 17rem;
+    padding:3rem;
+    transform: rotate(0deg);
+    p {
+        transform: rotate(0deg);
+    }
+    @media (max-width: 576px) { 
+        
+    }
+    @media (min-width: 576.1px) and (max-width: 768px) { 
+        
+    }
+    @media (min-width: 768.1px) { 
+        
+     }
+}

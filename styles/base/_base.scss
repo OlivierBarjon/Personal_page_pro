@@ -3,9 +3,16 @@
  body {
     margin: 0; /*Remove the margin in all browsers*/
     background-color: $mainColor;
+  }
+
+  .page {
+      background : linear-gradient(140deg,$darkColor 50%, $mainColor 30%);
+  }
+
+  .container {
     max-width:1200px;
     margin: auto;
-  }
+}
 
   /* ##### TEXT ##### */
 

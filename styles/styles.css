@@ -11,6 +11,13 @@ body {
   margin: 0;
   /*Remove the margin in all browsers*/
   background-color: #f7bc28;
+}
+
+.page {
+  background: linear-gradient(140deg, #000 50%, #f7bc28 30%);
+}
+
+.container {
   max-width: 1200px;
   margin: auto;
 }
@@ -55,7 +62,20 @@ BLACK : 900
   padding: 1.5rem;
 }
 
-/* ########## CONTAINER ##########  */
+/* ########## MAIN ##########  */
+main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.presentation {
+  width: 17rem;
+  padding: 3rem;
+  transform: rotate(0deg);
+}
+.presentation p {
+  transform: rotate(0deg);
+}
 /* ########## FOOTER ##########  */
 .footer {
   display: flex;
