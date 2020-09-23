@@ -2,4 +2,29 @@
 
  body {
     margin: 0; /*Remove the margin in all browsers*/
+    background-color: $mainColor;
+    max-width:1200px;
+    margin: auto;
   }
+
+  /* ##### TEXT ##### */
+
+h1 {
+    @include mainFont;
+    font-size: 2rem;
+    text-transform: uppercase;
+    span:nth-child(1) {
+        color: $firstName;
+    }
+    span:nth-child(2) {
+        color: $lastName;
+    }
+}
+
+p, a {
+    @include mainFont;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $text;
+}
+

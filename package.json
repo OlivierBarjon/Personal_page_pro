@@ -4,7 +4,7 @@
   "description": "Site de présentation personnel (expérimental)",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./styles/main.scss:./styles/styles.css --style compressed",
+    "sass": "sass --watch ./styles/main.scss:./styles/styles.css",
     "prefix": "postcss ./styles/main.css --use autoprefixer -d ./styles/styles.css"
   },
   "repository": {

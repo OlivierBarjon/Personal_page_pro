@@ -1,1 +1,49 @@
 /* ########## FOOTER ##########  */
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media (max-width: 576px) { 
+        flex-direction: column-reverse;
+    }
+    @media (min-width: 576.1px) and (max-width: 768px) { 
+        flex-direction: column-reverse;
+    }
+    @media (min-width: 768.1px) { 
+        flex-direction: row;
+     }
+    &__mail {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) { 
+            padding-top: 3rem;
+        }
+        @media (min-width: 768.1px) { 
+            padding-right : 5rem;
+         }
+        &__env {
+            padding-right:0.6rem;
+        }
+    }
+    &__RS {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 576px) { 
+            flex-direction: column;
+        }
+        @media (min-width: 576.1px) and (max-width: 768px) { 
+            flex-direction: row;
+        }
+        @media (min-width: 768.1px) { 
+            flex-direction: row;
+         }
+         div {
+             padding:1rem;
+         }
+    }
+}

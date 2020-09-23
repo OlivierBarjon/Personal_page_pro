@@ -1,1 +1,11 @@
 /* ########## MIXINS ##########  */
+
+/* ##### FONTS ##### */
+
+@mixin mainFont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin dropCap {
+    font-family: 'Great Vibes', cursive;
+}
