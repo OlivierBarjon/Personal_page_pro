@@ -4,6 +4,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 5vh 0vh 5vh 0vh;
     @media (max-width: 576px) { 
         flex-direction: column-reverse;
     }

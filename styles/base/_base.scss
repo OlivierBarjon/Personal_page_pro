@@ -6,7 +6,8 @@
   }
 
   .page {
-      background : linear-gradient(140deg,$darkColor 50%, $mainColor 30%);
+      background : linear-gradient(139deg,$darkColor 40%, $mainColor 30%);
+      overflow: hidden;
   }
 
   .container {
@@ -26,6 +27,12 @@ h1 {
     span:nth-child(2) {
         color: $lastName;
     }
+}
+
+h2 {
+    @include mainFont;
+    font-size: 8rem;
+    color : $darkColor;
 }
 
 p, a {

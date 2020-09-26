@@ -14,7 +14,8 @@ body {
 }
 
 .page {
-  background: linear-gradient(140deg, #000 50%, #f7bc28 30%);
+  background: linear-gradient(139deg, #000 40%, #f7bc28 30%);
+  overflow: hidden;
 }
 
 .container {
@@ -33,6 +34,12 @@ h1 span:nth-child(1) {
 }
 h1 span:nth-child(2) {
   color: #fff;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 8rem;
+  color: #000;
 }
 
 p, a {
@@ -65,22 +72,48 @@ BLACK : 900
 /* ########## MAIN ##########  */
 main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
+.titles {
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  /* margin: auto; */
+  /* position: absolute;
+  top : 0vh; */
+  animation: slideToRight 200s linear infinite;
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translate(20.8%, 1000%) rotate(-41deg);
+  }
+  100% {
+    transform: translate(72.3%, -1000%) rotate(-41deg);
+  }
+}
 .presentation {
   width: 17rem;
   padding: 3rem;
-  transform: rotate(0deg);
+}
+.presentation__dropcap {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  position: relative;
+  bottom: 0.2rem;
+  right: 0.2rem;
 }
 .presentation p {
-  transform: rotate(0deg);
+  line-height: 1.8rem;
 }
 /* ########## FOOTER ##########  */
 .footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 5vh 0vh 5vh 0vh;
 }
 @media (max-width: 576px) {
   .footer {
