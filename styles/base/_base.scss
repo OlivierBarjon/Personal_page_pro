@@ -6,8 +6,17 @@
   }
 
   .page {
-      background : linear-gradient(139deg,$darkColor 60vw, $mainColor 40vw);
+      /* ALTERNATIVE : background : linear-gradient(139deg,$darkColor 60vw, $mainColor 40vw); */
       overflow: hidden;
+        @media (max-width: 826.9px) { 
+            background : linear-gradient(139deg,$darkColor 60vw, $mainColor 40vw);
+        }
+        @media (min-width: 827px) and (max-width: 1259.9px) { 
+            background : linear-gradient(139deg,$darkColor 60vw, $mainColor 40vw);
+        }
+        @media (min-width: 1260px) { 
+            background : linear-gradient(139deg,$darkColor 46%, $mainColor 46%);
+        }
   }
 
   .container {
@@ -32,7 +41,16 @@ h1 {
 h2 {
     @include mainFont;
     color : $darkColor;
-    font-size: 8vw;
+    font-size: 4.5rem;
+    @media (max-width: 826.9px) { 
+        font-size: 4rem;
+    }
+    @media (min-width: 827px) and (max-width: 1259.9px) { 
+        font-size: 4.5rem;
+    }
+    @media (min-width: 1260px) { 
+        font-size: 6rem;
+     }
 }
 
 p, a {

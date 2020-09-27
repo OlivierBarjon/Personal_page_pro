@@ -10,18 +10,18 @@ main {
     white-space: nowrap;
     display: flex;
     flex-wrap: nowrap;
-    /* margin: auto; */
-    /* position: absolute;
-    top : 0vh; */
     animation: slideToRight 200s linear infinite;
+    @media (max-width: 576px) { 
+      visibility: collapse;
+    }
 }
 
 @keyframes slideToRight {
     from{
-        transform: translate(20.8%, 1000%) rotate(-41deg); //transform: translate(20%, 1000%) rotate(-41deg);
+        transform: translate(20.8%, 1000%) rotate(-41deg);
     }
     100% {
-        transform: translate(72.30%, -1000%) rotate(-41deg); //transform: translate(72.30%, -1000%) rotate(-41deg);
+        transform: translate(72.30%, -1000%) rotate(-41deg);
     }
 }
 
@@ -38,13 +38,4 @@ main {
     p {
         line-height: 1.8rem;
     }
-    @media (max-width: 576px) { 
-        
-    }
-    @media (min-width: 576.1px) and (max-width: 768px) { 
-        
-    }
-    @media (min-width: 768.1px) { 
-        
-     }
 }
