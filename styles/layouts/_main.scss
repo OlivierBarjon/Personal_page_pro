@@ -27,7 +27,7 @@ main {
 
 .presentation {
     width: 17rem;
-    padding:3rem;
+    padding:2rem;
     &__dropcap {
         @include dropCap;
         font-size:2rem;

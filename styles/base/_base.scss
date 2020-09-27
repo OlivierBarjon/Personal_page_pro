@@ -6,7 +6,7 @@
   }
 
   .page {
-      background : linear-gradient(139deg,$darkColor 40%, $mainColor 30%);
+      background : linear-gradient(139deg,$darkColor 60vw, $mainColor 40vw);
       overflow: hidden;
   }
 
@@ -31,8 +31,8 @@ h1 {
 
 h2 {
     @include mainFont;
-    font-size: 8rem;
     color : $darkColor;
+    font-size: 8vw;
 }
 
 p, a {

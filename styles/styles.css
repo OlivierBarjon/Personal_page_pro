@@ -14,7 +14,7 @@ body {
 }
 
 .page {
-  background: linear-gradient(139deg, #000 40%, #f7bc28 30%);
+  background: linear-gradient(139deg, #000 60vw, #f7bc28 40vw);
   overflow: hidden;
 }
 
@@ -38,8 +38,8 @@ h1 span:nth-child(2) {
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 8rem;
   color: #000;
+  font-size: 8vw;
 }
 
 p, a {
@@ -96,7 +96,7 @@ main {
 }
 .presentation {
   width: 17rem;
-  padding: 3rem;
+  padding: 2rem;
 }
 .presentation__dropcap {
   font-family: "Great Vibes", cursive;
