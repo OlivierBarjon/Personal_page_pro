@@ -99,6 +99,16 @@ BLACK : 900
   padding: 1.5rem;
 }
 
+/* ########## ANIMATION ##########  */
+/* ##### CANVAS ##### */
+canvas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  background-color: RGBa(0, 0, 0, 0) !important;
+}
+
 /* ########## MAIN ##########  */
 main {
   display: flex;
