@@ -15,6 +15,7 @@ body {
 
 .page {
   /* ALTERNATIVE : background : linear-gradient(139deg,$darkColor 60vw, $mainColor 40vw); */
+  height: 100vh;
   overflow: hidden;
 }
 @media (max-width: 826.9px) {
@@ -159,7 +160,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 5vh 0vh 5vh 0vh;
+  padding: 0vh;
 }
 @media (max-width: 576px) {
   .footer {

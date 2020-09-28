@@ -23,9 +23,9 @@ const Engine = Matter.Engine, // Engines : methods for creating and manipulating
         options: { // options key accepts an object as its value
             //width: 50, // to set values for different parameters
             //height: 50,
-            //background: '../assets/Olivier.jpg',
+            //background: '#0f0f13',
             //showAngleIndicator: true,
-            wireframes:false,
+            wireframes:true,
         }
     });
 
@@ -33,7 +33,7 @@ const Engine = Matter.Engine, // Engines : methods for creating and manipulating
     const boxA = Bodies.rectangle(400, 200, 80, 80);
     const ballA = Bodies.circle(380, 100, 100, 10);
     const ballB = Bodies.circle(460, 10, 40, 10);
-    const ground = Bodies.rectangle(200, 400, 500, 1, { isStatic: true });
+    const ground = Bodies.rectangle(400, 500, 500, 0.1, { isStatic: true });
     
     World.add(engine.world, [boxA, ballA, ballB, ground]); // Once we have created the bodies, we need to add them to a world of our choice using the add() method from the Matter.World module
     
