@@ -25,17 +25,22 @@ const Engine = Matter.Engine, // Engines : methods for creating and manipulating
             //height: 50,
             //background: '#0f0f13',
             //showAngleIndicator: true,
-            wireframes:true,
+            wireframes:false,
         }
     });
 
     // create different bodies that will interact in our world (with help of Matter.Bodies)
-    const boxA = Bodies.rectangle(400, 200, 80, 80);
-    const ballA = Bodies.circle(380, 100, 100, 10);
-    const ballB = Bodies.circle(460, 10, 40, 10);
-    const ground = Bodies.rectangle(400, 500, 500, 0.1, { isStatic: true });
+    const boxA = Bodies.rectangle(400, 100, 40, 40); // position horizontale/left, position vertical/top , largeur , longueur
+    const ballA = Bodies.circle(380, 50, 40, 10);
+    const ballB = Bodies.circle(450, 40, 20, 10);
+    const ballC = Bodies.circle(440, 30, 10, 10);
+    const ballD = Bodies.circle(430, 20, 10, 10);
+    const ballE = Bodies.circle(420, 10, 10, 10);
+    const ballF = Bodies.circle(410, 5, 10, 10);
+    const ballG = Bodies.circle(390, 0, 10, 10);
+    const ground = Bodies.rectangle(400, 300, 400, 0.1, { isStatic: true });
     
-    World.add(engine.world, [boxA, ballA, ballB, ground]); // Once we have created the bodies, we need to add them to a world of our choice using the add() method from the Matter.World module
+    World.add(engine.world, [boxA, ballA, ballB, ballC, ballD, ballE, ballF, ballG, ground]); // Once we have created the bodies, we need to add them to a world of our choice using the add() method from the Matter.World module
     
     Engine.run(engine); // run the engine
     Render.run(render); // run the render
