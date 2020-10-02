@@ -119,11 +119,9 @@ canvas {
   display: flex;
   flex-wrap: nowrap;
   animation: slideToRight 200s linear infinite;
-}
-@media (max-width: 576px) {
-  .titles {
+  /* @media (max-width: 576px) { 
     visibility: collapse;
-  }
+  } */
 }
 
 @keyframes slideToRight {
