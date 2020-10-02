@@ -11,3 +11,22 @@ canvas {
     margin: auto;
     background-color: RGBa(0, 0, 0, 0)!important;
 }
+
+.titles {
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slideToRight 200s linear infinite;
+    @media (max-width: 576px) { 
+      visibility: collapse;
+    }
+}
+
+@keyframes slideToRight {
+    from{
+        transform: translate(21.5%, 1000%) rotate(-41deg);
+    }
+    100% {
+        transform: translate(72.10%, -1000%) rotate(-41deg);
+    }
+}
