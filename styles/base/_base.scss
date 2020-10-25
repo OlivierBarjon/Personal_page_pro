@@ -42,17 +42,18 @@ h1 {
 
 h2 {
     @include mainFont;
+    text-transform: uppercase;
     color : $darkColor;
     font-size: 4.5rem;
     font-weight:900;
     @media (max-width: 826.9px) { 
-        font-size: 4rem;
+        font-size: 4rem; //4rem
     }
     @media (min-width: 827px) and (max-width: 1259.9px) { 
-        font-size: 4.5rem;
+        font-size: 4.5rem; //4.5rem
     }
     @media (min-width: 1260px) { 
-        font-size: 6rem;
+        font-size: 6rem; //6rem
      }
 }
 
