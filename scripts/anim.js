@@ -60,7 +60,7 @@ var boxE = Bodies.rectangle(440, 10, 100, 100,{
         }
     }
 });
-var ground = Bodies.rectangle(300, 350, 200, 0, { 
+var ground = Bodies.rectangle(10, 550, 290, 1.5, { 
     isStatic: true,
     render:{
         fillStyle: 'black'
