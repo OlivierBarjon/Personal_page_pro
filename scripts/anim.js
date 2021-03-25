@@ -54,15 +54,16 @@ var boxD = Bodies.rectangle(250, 250, 100, 2, {
 var boxE = Bodies.rectangle(440, 10, 100, 100,{
     render:{
         sprite: {
-            texture: '../assets/Olivier-Barjon.jpg',
+            texture: '../assets/OpenToWork.png',
             xScale: 0.8,
             yScale: 0.8
         }
     }
-});
+});//440, 10, 100, 100
 var ground = Bodies.rectangle(10, 450, 290, 1.5, { 
     isStatic: true,
     render:{
+        /* fillStyle: '#f7bc28', */
         fillStyle: 'rgba(0,0,0,0)'
     }
  });
