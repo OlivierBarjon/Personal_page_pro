@@ -32,6 +32,8 @@ h1 {
     font-size: 2rem;
     font-weight:700;
     text-transform: uppercase;
+    position:relative;
+    z-index:1;
     span:nth-child(1) {
         color: $firstName;
     }
